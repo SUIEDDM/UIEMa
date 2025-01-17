@@ -9,3 +9,22 @@ Red light attenuation, medium absorption differences, and suspended particles ar
  
 You can download the datasets on [UIEB](https://li-chongyi.github.io/proj_benchmark.html)(UIEB),[LSUI](https://lintaopeng.github.io/_pages/UIE%20Project%20Page.html) and [U45](https://github.com/IPNUISTlegal/underwater-test-dataset-U45-)
 
+## Installation
+
+- `pip install causal-conv1d>=1.1.0`: an efficient implementation of a simple causal Conv1d layer used inside the Mamba block.
+- `pip install mamba-ssm`: the core Mamba package.
+
+It can also be built from source with `pip install .` from this repository.
+
+If `pip` complains about PyTorch versions, try passing `--no-build-isolation` to `pip`.
+
+Other requirements:
+- Ubuntu 20.04
+- NVIDIA GPU (A100)
+- PyTorch 1.10.1 
+- CUDA 11.6+
+
+
+## Experimental analysis
+![image](https://github.com/SUIEDDM/UIEMa/blob/main/fig1.png)
+![image](https://github.com/SUIEDDM/UIEMa/blob/main/fig13.png)
